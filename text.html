@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Teks Berjalan</title>
+<style>
+.teks-berjalan {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.teks {
+  display: inline-block;
+  padding-left: 100%; /* Mulai dari luar layar */
+  animation: jalan 10s linear infinite; /* Animasi selama 10 detik, terus menerus */
+}
+
+@keyframes jalan {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
+}
+</style>
+</head>
+<body>
+
+<div class="teks-berjalan">
+  <span class="teks">Ini adalah contoh teks yang berjalan dari kanan ke kiri. Selamat mencoba!</span>
+</div>
+
+</body>
+</html>
